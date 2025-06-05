@@ -40,6 +40,10 @@ A new column, credit_or_debit, was created to classify whether a transaction was
 - **Creation of Analytical View:**
 All cleaned and transformed columns were combined into a reusable SQL view. This view acts as a virtual table, allowing for efficient querying and dashboard integration.
 
+<a href = "https://github.com/Faithe7/Sera_Subscriptions_Payment_Analysis/blob/main/Assets/sera_sales_date_time_transformation.sql"> Date time Transformation with SQL </a>
+
+<a href = "https://github.com/Faithe7/Sera_Subscriptions_Payment_Analysis/blob/main/Assets/sera_sales_data_transformation.sql"> Data Transformation with SQL </a>
+
 ## Data Analysis with SQL
 Exploratory data analysis was conducted in SQL to uncover key patterns and performance metrics. The following actions were carried out:
 
@@ -48,6 +52,8 @@ Exploratory data analysis was conducted in SQL to uncover key patterns and perfo
 - Aggregated subscription revenue by month and payment channel, adjusted for currency (NGN and USD).
 - Assessed transaction outcomes (success, failure, abandoned) across different payment channels to determine which methods yielded the best and worst results.
 - Counted unique users with at least one successful transaction to define the active subscriber base.
+
+<a href = "https://github.com/Faithe7/Sera_Subscriptions_Payment_Analysis/blob/main/Assets/sera_sales_analysis.sql"> Data Analysis with SQL </a>
 
 ## Data Model
 The data transformed in Power Query. Date columns were created for each datasets using the datetime column. Then, date table was created. Finally, relationships were created between the tables in the dataset. Additional were also created. 
