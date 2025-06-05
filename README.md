@@ -1,7 +1,7 @@
 # Sera Subscriptions Payment Analysis and Visualization
 
 ## Introduction
-This dashboard provides a data-driven overview of subscription payments for Sera, a global SaaS company offering financial insights for investment decisions. By leveraging SQL for data transformation and Power BI for visualization, it uncovers key patterns in revenue generation, transaction outcomes, subscriber trends, and payment channel performance across 2022 and 2023. The goal is to identify what’s working, where revenue is being lost, and how payment processes can be optimized to improve user experience and financial performance.
+This project provides a data-driven overview of subscription payments for Sera, a global SaaS company offering financial insights for investment decisions. By leveraging SQL for data transformation and Power BI for visualization, it uncovers key patterns in revenue generation, transaction outcomes, subscriber trends, and payment channel performance across 2022 and 2023. The goal is to identify what’s working, where revenue is being lost, and how payment processes can be optimized to improve user experience and financial performance.
 
 ## Objectives
 - **Transform and Model Data:** Restructure raw subscription payment data into a clean, analysis-ready format to support efficient querying and reporting.
