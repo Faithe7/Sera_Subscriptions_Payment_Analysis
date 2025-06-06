@@ -4,9 +4,9 @@
 This project provides a data-driven overview of subscription payments for Sera, a global SaaS company offering financial insights for investment decisions. By leveraging SQL for data transformation and Power BI for visualization, it uncovers key patterns in revenue generation, transaction outcomes, subscriber trends, and payment channel performance across 2022 and 2023. The goal is to identify what’s working, where revenue is being lost, and how payment processes can be optimized to improve user experience and financial performance.
 
 ## Objectives
-- **Transform and Model Data:** Restructure raw subscription payment data into a clean, analysis-ready format to support efficient querying and reporting.
+- **Transform and Model Data:** Restructure raw subscription payment data into a clean, analysis-ready format using SQL to support efficient querying and reporting.
 - **Analyze Sales and Retention Trends:** Explore revenue, transaction patterns, and subscriber behavior to understand sales performance and customer retention over time.
-- **Build Insightful Dashboards:** Develop interactive visualizations using SQL and Power BI to uncover actionable insights and support strategic business decisions.
+- **Build Insightful Dashboards:** Develop interactive visualizations using Power BI to uncover actionable insights and support strategic business decisions.
 
 ## Tools
 - SQL (PostgreSQL)
@@ -56,7 +56,7 @@ Exploratory data analysis was conducted in SQL to uncover key patterns and perfo
 <a href = "https://github.com/Faithe7/Sera_Subscriptions_Payment_Analysis/blob/main/Assets/sera_sales_analysis.sql"> Data Analysis with SQL </a>
 
 ## Data Model
-The data transformed in Power Query. Date columns were created for each datasets using the datetime column. Then, date table was created. Finally, relationships were created between the tables in the dataset. Additional were also created. 
+The data was further transformed in Power Query. Date columns were created using the datetime column. Then, date table was created. Finally, relationships were created between the data tables. Additional tables were also created to aid further analysis. 
 
 ![Data Model](https://github.com/Faithe7/Sera_Subscriptions_Payment_Analysis/blob/main/Assets/sera_payment_subscriptions_dashboard_data_model.png)
 
@@ -68,7 +68,7 @@ The data transformed in Power Query. Date columns were created for each datasets
 - **Total Revenue:** ₦5,243,896 - Generated form successful transactions.
 - **Subscribers:** 264 - Number of users who successfully subscribed (successful transactions).
 - **Total Transactions:** 1,465 - Includes successful, failed and abandoned transactions.
-- **Current Month Revenue:** ₦393,842 (⬇ from previous month)
+- **Current Month Revenue:** ₦393,842 (decrease from previous month)
 
 ### Key Insights
 #### Declining Activity in Current Month
@@ -83,7 +83,7 @@ The data transformed in Power Query. Date columns were created for each datasets
 - Debit cards had the highest success rate (52%).
 
 #### Bank Performance
-- Guaranty Trust Bank (GTBank) and Access Bank processed the highest number of successful transactions.
+- GTBank and Access Bank processed the highest number of successful transactions.
 - GTBank shows the highest total transactions but also a high number of abandoned ones.
 - Banks like UBA and First Bank also performed well with lower abandonment rates.
 
@@ -99,7 +99,10 @@ The data transformed in Power Query. Date columns were created for each datasets
 - NGN dominates successful transactions (245), followed by USD (19).
 - MasterCard debit cards are the most used and most successful, while credit cards have the highest failure rate.
 - Many card types were not recorded and were therefore categorized as “other”.
-- Abandoned transactions is largely concentrated on bank transfer payments.
+- Abandoned transactions is largely concentrated with unknown card types classified as "other".
+
+#### Impact of Transaction Frequency on Subscription Behavior
+Analysis indicates that a higher number of transactions per user does not correspond to an increased likelihood of subscription.
 
 ## Recommendations
 
